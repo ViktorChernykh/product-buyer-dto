@@ -15,8 +15,6 @@ public struct BAttributeCategoryPivotListDto: Codable {
 	public let externalIds: [String]?
 	public let page: Int?
 	public let per: Int?
-	public let createdRange: DateRangeDto?
-	public let updatedRange: DateRangeDto?
 
 	// MARK: - Init
 	public init(
@@ -24,16 +22,12 @@ public struct BAttributeCategoryPivotListDto: Codable {
 		categoryId: UUID?,
 		externalIds: [String]?,
 		page: Int?,
-		per: Int?,
-		createdRange: DateRangeDto?,
-		updatedRange: DateRangeDto?
+		per: Int?
 	) {
 		self.attributeId = attributeId
 		self.categoryId = categoryId
 		self.externalIds = externalIds
 		self.page = page
 		self.per = per
-		self.createdRange = createdRange
-		self.updatedRange = updatedRange
 	}
 }
