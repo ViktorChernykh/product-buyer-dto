@@ -17,12 +17,14 @@ public struct BProductListDto: Codable {
 	public let isGiftCard: Bool?
 	public let isPayWhatYouWant: Bool?
 	public let lang: String?
-	public let likeCount: IntRangeDto?
+	public let likeCountMax: Int?
+	public let likeCountMin: Int?
 	public let name: String?
 	public let onHand: Bool?
 	public let page: Int?
 	public let per: Int?
-	public let priceRange: DoubleRangeDto?
+	public let priceMax: Double?
+	public let priceMin: Double?
 	public let skus: [String]?
 	public let sortBy: [String: String]?	 //["name": "asc"]
 	public let vendorIds: [UUID]?
@@ -36,12 +38,14 @@ public struct BProductListDto: Codable {
 		isGiftCard: Bool?,
 		isPayWhatYouWant: Bool?,
 		lang: String?,
-		likeCount: IntRangeDto?,
+		likeCountMax: Int?,
+		likeCountMin: Int?,
 		name: String?,
 		onHand: Bool?,
 		page: Int?,
 		per: Int?,
-		priceRange: DoubleRangeDto?,
+		priceMax: Double?,
+		priceMin: Double?,
 		skus: [String]?,
 		sortBy: [String: String]?,	 //["name": "asc"]
 		vendorIds: [UUID]?
@@ -53,12 +57,14 @@ public struct BProductListDto: Codable {
 		self.isGiftCard = isGiftCard
 		self.isPayWhatYouWant = isPayWhatYouWant
 		self.lang = lang
-		self.likeCount = likeCount
+		self.likeCountMax = likeCountMax
+		self.likeCountMin = likeCountMin
 		self.name = name
 		self.onHand = onHand
 		self.page = page
 		self.per = per
-		self.priceRange = priceRange
+		self.priceMax = priceMax
+		self.priceMin = priceMin
 		self.skus = skus
 		self.sortBy = sortBy	 //["name": "asc"]
 		self.vendorIds = vendorIds
