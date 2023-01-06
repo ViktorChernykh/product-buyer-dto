@@ -1,5 +1,5 @@
 //
-//  BVendorDto.swift
+//  VendorDto.swift
 //  ProductBuyerDto
 //
 //  Created by Victor Chernykh on 21.03.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BVendorDto: Codable {
+public struct VendorDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
 	public let image: String?

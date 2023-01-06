@@ -1,5 +1,5 @@
 //
-//  BCategoryDto.swift
+//  CategoryDto.swift
 //  ProductBuyerDto
 //
 //  Created by Victor Chernykh on 19.03.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BCategoryDto: Codable {
+public struct CategoryDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
 	public var image: String?

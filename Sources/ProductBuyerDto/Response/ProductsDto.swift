@@ -1,14 +1,13 @@
 //
-//  BProductsDto.swift
+//  ProductsDto.swift
 //  ProductBuyerDto
 //
 //  Created by Victor Chernykh on 28.03.2022.
 //
 
 import Foundation
-import ProductDto
 
-public struct BProductsDto: Codable {
+public struct ProductsDto: Codable {
 	// MARK: - Stored properties
 	public let id: UUID
 	public let currencyId: String

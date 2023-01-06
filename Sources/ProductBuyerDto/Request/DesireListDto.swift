@@ -1,5 +1,5 @@
 //
-//  BDesire.swift
+//  DesireListDto.swift
 //  ProductDto
 //
 //  Created by Victor Chernykh on 01.05.2022.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct BDesireListDto: Codable {
+public struct DesireListDto: Codable {
 	// MARK: - Stored properties
 	public let lang: String?
 	public let page: Int?
