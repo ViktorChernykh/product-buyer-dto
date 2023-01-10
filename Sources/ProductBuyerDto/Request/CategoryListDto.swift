@@ -10,7 +10,6 @@ import Foundation
 public struct CategoryListDto: Codable {
 	// MARK: - Stored properties
 	public let ids: [UUID]?
-	public let isVisible: Bool?
 	public let lang: String?
 	public let name: String?
 	public let page: Int?
@@ -20,7 +19,6 @@ public struct CategoryListDto: Codable {
 	// MARK: - Init
 	public init(
 		ids: [UUID]?,
-		isVisible: Bool?,
 		lang: String?,
 		name: String?,
 		page: Int?,
@@ -28,7 +26,6 @@ public struct CategoryListDto: Codable {
 		per: Int?
 	) {
 		self.ids = ids
-		self.isVisible = isVisible
 		self.lang = lang
 		self.name = name
 		self.page = page
