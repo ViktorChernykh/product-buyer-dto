@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto for request list of vendors.
 public struct VendorListDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let ids: [UUID]?
 	public let name: String?
 	public let page: Int?
@@ -16,10 +17,10 @@ public struct VendorListDto: Codable {
 
 	// MARK: - Init
 	public init(
-		ids: [UUID]?,
-		name: String?,
-		page: Int?,
-		per: Int?
+		ids: [UUID]? = nil,
+		name: String? = nil,
+		page: Int? = nil,
+		per: Int? = nil
 	) {
 		self.ids = ids
 		self.name = name

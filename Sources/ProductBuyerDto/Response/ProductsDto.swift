@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto for product list.
 public struct ProductsDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let id: UUID
 	public let currencyId: String
 	public let images: [String]?

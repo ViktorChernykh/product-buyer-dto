@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto for request list of categories.
 public struct CategoryListDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let ids: [UUID]?
 	public let lang: String?
 	public let name: String?
@@ -18,12 +19,12 @@ public struct CategoryListDto: Codable {
 
 	// MARK: - Init
 	public init(
-		ids: [UUID]?,
-		lang: String?,
-		name: String?,
-		page: Int?,
-		parentIds: [UUID]?,
-		per: Int?
+		ids: [UUID]? = nil,
+		lang: String? = nil,
+		name: String? = nil,
+		page: Int? = nil,
+		parentIds: [UUID]? = nil,
+		per: Int? = nil
 	) {
 		self.ids = ids
 		self.lang = lang

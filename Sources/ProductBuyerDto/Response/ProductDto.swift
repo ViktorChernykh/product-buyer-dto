@@ -8,8 +8,9 @@
 import Foundation
 import ProductDto
 
+/// Dto to get the Product.
 public struct ProductDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let id: UUID
 	public let attributes: [AttributeForProductDto]
 	public let categories: [CategoryForProductDto]

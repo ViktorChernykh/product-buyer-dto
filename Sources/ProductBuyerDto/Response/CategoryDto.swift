@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto to get the Category.
 public struct CategoryDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let id: UUID
 	public var image: String?
 	public let name: String

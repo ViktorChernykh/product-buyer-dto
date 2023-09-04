@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto for request list of products.
 public struct ProductListDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let ids: [UUID]?
 	public let attributeValueIds: [UUID]?
 	public let categoryIds: [UUID]?
@@ -30,24 +31,24 @@ public struct ProductListDto: Codable {
 
 	// MARK: - Init
 	public init(
-		ids: [UUID]?,
-		attributeValueIds: [UUID]?,
-		categoryIds: [UUID]?,
-		isAvailableOnOrder: Bool?,
-		isGiftCard: Bool?,
-		isPayWhatYouWant: Bool?,
-		lang: String?,
-		likeCountMax: Int?,
-		likeCountMin: Int?,
-		name: String?,
-		onHand: Bool?,
-		page: Int?,
-		per: Int?,
-		priceMax: Double?,
-		priceMin: Double?,
-		skus: [String]?,
-		sortBy: [String: String]?,	 //["name": "asc"]
-		vendorIds: [UUID]?
+		ids: [UUID]? = nil,
+		attributeValueIds: [UUID]? = nil,
+		categoryIds: [UUID]? = nil,
+		isAvailableOnOrder: Bool? = nil,
+		isGiftCard: Bool? = nil,
+		isPayWhatYouWant: Bool? = nil,
+		lang: String? = nil,
+		likeCountMax: Int? = nil,
+		likeCountMin: Int? = nil,
+		name: String? = nil,
+		onHand: Bool? = nil,
+		page: Int? = nil,
+		per: Int? = nil,
+		priceMax: Double? = nil,
+		priceMin: Double? = nil,
+		skus: [String]? = nil,
+		sortBy: [String: String]? = nil,	 //["name": "asc"]
+		vendorIds: [UUID]? = nil
 	) {
 		self.ids = ids
 		self.attributeValueIds = attributeValueIds

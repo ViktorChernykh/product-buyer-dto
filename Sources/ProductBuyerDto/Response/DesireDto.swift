@@ -7,8 +7,9 @@
 
 import Foundation
 
+/// Dto to get the user's desire product.
 public struct DesireDto: Codable {
-	// MARK: - Stored properties
+	// MARK: Stored properties
 	public let id: UUID
 	public let image: String?
 	public let name: String
