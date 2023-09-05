@@ -1,6 +1,6 @@
 //
 //  AttributeValueDto.swift
-//  ProductAdminDto
+//  ProductBuyerDto
 //
 //  Created by Victor Chernykh on 10.05.2022.
 //

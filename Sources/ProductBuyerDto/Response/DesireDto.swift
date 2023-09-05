@@ -1,6 +1,6 @@
 //
 //  DesireDto.swift
-//  ProductDto
+//  ProductBuyerDto
 //
 //  Created by Victor Chernykh on 01.05.2022.
 //
