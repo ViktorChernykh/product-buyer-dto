@@ -14,6 +14,7 @@ public struct ProductsDto: Codable {
 	public let currencyId: String
 	public let images: [String]?
 	public let isDesire: Bool
+	public let isOnHand: Bool?
 	public let isPayWhatYouWant: Bool
 	public let likeCount: Int?
 	public let name: String
@@ -32,6 +33,7 @@ public struct ProductsDto: Codable {
 		currencyId: String,
 		images: [String]?,
 		isDesire: Bool,
+		isOnHand: Bool?,
 		isPayWhatYouWant: Bool,
 		likeCount: Int?,
 		name: String,
@@ -48,6 +50,7 @@ public struct ProductsDto: Codable {
 		self.currencyId = currencyId
 		self.images = images
 		self.isDesire = isDesire
+		self.isOnHand = isOnHand
 		self.isPayWhatYouWant = isPayWhatYouWant
 		self.likeCount = likeCount
 		self.name = name
